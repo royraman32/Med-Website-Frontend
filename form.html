@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="shortcut icon" href="logo3.png"> 
+    <link rel="stylesheet" type="text/css" href="style_form.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+        <nav >
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+
+            </label>
+
+        <div class="logo">
+            <img src="logo3.png" alt="med logo">
+        </div>
+
+        <ul>
+            <li ><a href="index.html">HOME <i class="fas fa-home"></i></a></li>
+            
+            <li><a href="form.html">REGISTER<i class="fas fa-users"></i></a></li>
+            <li ><a href="login.html">LOGIN<i class="fas fa-user"></i></a></li>
+            <li><a href="#services">SERVICE<i class="fas fa-clone"></i></a></li>
+            <li><a href="products.html">ORDER NOW<i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
+            <li class="active"><a href="contact.html">QUERY<i class="fas fa-phone"></i></a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="title">
+        <p>
+            <b> MY MED </b>
+        </p>
+    </div>
+
+<div class="form">
+  <center><br><br><br><h1 style="color: white;">REGISTRATION FORM </h1></center> 
+    <form action="mailto:vaibhavmaan069@gmail.com" method="GET">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label>PHOTOGRAPH</label>
+            <input type="file"  id="fimage" name="fimage"  onchange="readURL(this)" accept="Image/*"><br>
+            <label for="ftitle">Title</label>
+            <select id="ftitle" name="Title">
+                <option value="MR.">MR.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="MRs.">MRs.</option>
+            </select>
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname" >
+            <label for="lname"> Last Name</label>
+            <input type="text" id="lname" name="lname" ><br><br>
+            <label for="dob">D.O.B</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="faddress">ADDRESS</label>
+            <input type="text" id="faddress" name="faddress" style="width:400px"><br><br>
+            <label for="tel">MOBILE NUMBER </label>
+            <input type="tel" id="tel" name="tel" maxlength="10"><br><br>
+            <label for="email">E-MAIL ID</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>PREFERENCE </legend>
+            <ol>
+                <li ><input type="text"><br></li>
+                <li><input type="text"><br></li>
+                <li><input type="text"><br></li>
+                <li><input type="text"><br></li>
+                <li><input type="text"><br></li>
+
+                
+            </ol>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>PASSWORD</legend>
+            <label>TYPE PASSWORD</label>
+        <input type="password" minlength="6">  
+        <label>RE-TYPE PASSWORD</label>
+        <input type="password" minlength="6" >      
+        </fieldset>
+        
+        <center>
+            <br><br>
+        <label for="submit"></label>
+        <input type="submit" id="submit" name="submit"></center>
+    </form>
+</div>
+</body>
+</html>
